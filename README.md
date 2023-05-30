@@ -109,7 +109,7 @@ else : ?>
 
 - Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel
 
-![Tampilan Web](img/tampilan_web.png)
+![Tampilan Web](img/3.png)
 
 <p>Belum ada data yang ditampilkan. Kemudian coba tambahkan beberapa data pada database agar dapat
 ditampilkan datanya.</p>
@@ -129,7 +129,7 @@ mencapai lebih dari 2000 tahun.', 'artikel-kedua');
 
 - Refresh kembali browser, sehingga akan ditampilkan hasilnya.
 
-![Tampilan Artikel](img/3.png)
+![Tampilan Artikel](img/4.png)
 
 # Membuat Tampilan Detail Artikel
 <p>Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan
@@ -177,7 +177,7 @@ return view('artikel/detail', compact('artikel', 'title'));
 $routes->get('/artikel/(:any)', 'Artikel::view/$1');
 ```
 
-![Detail Artikel](img/4.png)
+![Detail Artikel](img/5.png)
 
 # Membuat Menu Admin
 - Menu Admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller Artikel dengan
@@ -254,7 +254,7 @@ $routes->group('admin', function($routes) {
 
 - Akses menu admin dengan url http://localhost:8080/admin/artikel
 
-![Admin Index](img/5.png)
+![Admin Index](img/6.png)
 
 # Menambah Data Artikel
 - Tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
@@ -304,7 +304,7 @@ return view('artikel/form_add', compact('title'));
 <?= $this->include('template/admin_footer'); ?>
 ```
 
-![Tambah Artikel](img/6.png)
+![Tambah Artikel](img/7.png)
 
 # Mengubah Data
 - Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
@@ -350,7 +350,7 @@ $data['isi'];?></textarea>
 <?= $this->include('template/admin_footer'); ?>
 ```
 
-![Edit Artikel](img/7.png)
+![Edit Artikel](img/8.png)
 
 # Menghapus Data
 <p>Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().</p>
